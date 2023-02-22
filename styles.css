@@ -1,0 +1,284 @@
+body{ 
+    background: rgb(177,145,109);
+    color: rgb(0, 0, 0);
+    font-family: Helvetica Neue, helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+header.navigate-header{ 
+    background: rgb(177,145,109);
+    margin: 20px;
+}
+
+header.stock-outlook-header{
+    position: relative;
+    bottom: 541px;
+    max-width: 200px;
+    background: rgb(144,122,95);
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 80%;
+    font-size:medium;
+    font-weight:bold;
+    text-align: center;
+    margin: 10px;
+}
+
+footer.about-the-developer{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    font-size:small;
+    font-weight:bold;
+    opacity: 80%;
+    width: 50%;
+    margin: 0px 22%;
+}
+
+section.intro-sentences-on-index-page{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding:  30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    font-size:large;
+    font-weight:bold;
+    opacity: 80%;
+    width: 50%;
+    margin: 0px 22%;
+}
+
+button.go-to-learning-page-button{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    display: block;
+    flex-direction: row;
+    border-radius: 10px;
+    font-size:large;
+    font-weight:bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+div {
+    background: red;
+    margin: auto;
+    width: 100px;
+
+}
+
+ul.pages-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background:rgb(144,122,95);
+    border-radius: 10px;
+    font-weight:700;
+}
+
+li {
+    display: inline-block;
+    padding: 30px;
+    margin-left: 10px;
+    opacity: 70%;
+}
+
+li:first-child{
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+h6.disclaimer{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    font-size:small;
+    font-weight:bold;
+    opacity: 80%;
+    max-width: 1000px;
+    position: relative;
+    left: 160px;
+}
+
+footer.learning-intro-sentences{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    font-size:large;
+    font-weight:bold;
+    opacity: 80%;
+    width: 50%;
+    margin: 0px 22%;
+}
+
+button.learning-button{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    display: block;
+    flex-direction: row;
+    border-radius: 10px;
+    font-size:x-large;
+    font-weight:bold;
+    margin: auto;
+    cursor: pointer;
+}
+
+ul.basics-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background:rgb(144,122,95);
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+button.back-to-learning{
+    background: rgb(104, 88, 69);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    flex-direction: row;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight:bold;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    left: 550px;
+    bottom: 40px;
+    width: 150px;
+}
+
+h3.pattern-header{
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.TA-patterns{
+    display: flex;
+    flex-direction: row;
+}
+
+.TA-patterns img{
+    width:400px;
+}
+
+.TA-patterns figure{
+    margin: auto;
+    text-align: center;
+    text-emphasis: 700;
+    font-size: large;
+    background :rgb(104,88,69);
+    border-radius: 10px;
+    width: 400px;
+}
+
+h1.basics-header{
+    background: rgb(144,122,95);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+footer.supplyanddemand-intro-sentences{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size:medium;
+    font-weight:bold;
+    opacity: 80%;
+    width: 50%;
+    margin: 0px 22%;
+}
+
+h1.supply{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size:x-large;
+    font-weight:bold;
+    width: 20%;
+    position: relative;
+    left: 295px;
+    width: 700px;
+}
+
+h1.demand{
+    background: rgb(144,122,95);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size:x-large;
+    font-weight:bold;
+    width: 20%;
+    position: relative;
+    left: 295px;
+    width: 700px;
+}
+
+p.supply-description{
+    font-size:medium;
+    width: 700px;
+    text-align: center;
+}
+
+.supplyanddemand-example img{
+    width:800px;
+    position: relative;
+    left:215px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(105, 98, 91);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
