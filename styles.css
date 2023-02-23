@@ -1,5 +1,5 @@
 body{ 
-    background: rgb(177,145,109);
+    background: #013328;
     color: rgb(0, 0, 0);
     font-family: Helvetica Neue, helvetica, Arial, sans-serif;
     margin: 0;
@@ -7,26 +7,26 @@ body{
 }
 
 header.navigate-header{ 
-    background: rgb(177,145,109);
-    margin: 20px;
+    background: #013328;
+    margin: 1%;
+    color:white;
 }
 
 header.stock-outlook-header{
     position: relative;
     bottom: 541px;
-    max-width: 200px;
-    background: rgb(144,122,95);
-    padding: 30px;
+    max-width: 16%;
+    background: #E3DCD2;
+    padding: 2%;
     border-radius: 10px;
-    opacity: 80%;
     font-size:medium;
     font-weight:bold;
     text-align: center;
-    margin: 10px;
+    margin: 0.7%;
 }
 
 footer.about-the-developer{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
     padding: 30px;
     display: flex;
@@ -35,13 +35,12 @@ footer.about-the-developer{
     border-radius: 10px;
     font-size:small;
     font-weight:bold;
-    opacity: 80%;
     width: 50%;
     margin: 0px 22%;
 }
 
 section.intro-sentences-on-index-page{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
     padding:  30px;
     display: flex;
@@ -50,13 +49,12 @@ section.intro-sentences-on-index-page{
     border-radius: 10px;
     font-size:large;
     font-weight:bold;
-    opacity: 80%;
     width: 50%;
     margin: 0px 22%;
 }
 
 button.go-to-learning-page-button{
-    background: rgb(144,122,95);
+    background: #CC8B65;
     color:rgb(0, 0, 0);
     padding: 20px;
     display: block;
@@ -68,20 +66,19 @@ button.go-to-learning-page-button{
     cursor: pointer;
 }
 
-div {
-    background: red;
-    margin: auto;
-    width: 100px;
-
+button.go-to-learning-page-button:hover{
+    color: #E3DCD2;
 }
 
 ul.pages-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background:rgb(144,122,95);
+    background: #E3DCD2;
     border-radius: 10px;
     font-weight:700;
+    color:black;
+    font-weight: bold;
 }
 
 li {
@@ -102,50 +99,48 @@ a {
 
 a:hover{
     text-decoration: underline;
-    color: white;
+    color: #CC8B65;
 }
 
 .logo {
     position: relative;
-    top: 20px;
-    left: 40px;
+    top: 10px;
+    left: -1%;
 }
 
 h6.disclaimer{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
-    padding: 0px;
+    padding: 0.5%;
     display: flex;
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
     font-size:small;
     font-weight:bold;
-    opacity: 80%;
-    max-width: 1000px;
+    max-width: 75%;
     position: relative;
-    left: 160px;
+    left: 13%;
 }
 
 footer.learning-intro-sentences{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
-    padding: 30px;
+    padding: 3%;
     display: flex;
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
     font-size:large;
     font-weight:bold;
-    opacity: 80%;
     width: 50%;
     margin: 0px 22%;
 }
 
 button.learning-button{
-    background: rgb(144,122,95);
+    background: #CC8B65;
     color:rgb(0, 0, 0);
-    padding: 20px;
+    padding: 2%;
     display: block;
     flex-direction: row;
     border-radius: 10px;
@@ -155,18 +150,22 @@ button.learning-button{
     cursor: pointer;
 }
 
+button.learning-button:hover{
+    color:#E3DCD2;
+}
+
 ul.basics-list{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background:rgb(144,122,95);
+    background:#E3DCD2;
     border-radius: 10px;
     font-size: large;
     font-weight: bold;
 }
 
 button.back-to-learning{
-    background: rgb(104, 88, 69);
+    background: #CC8B65;
     color:rgb(0, 0, 0);
     padding: 10px;
     display: block;
@@ -177,9 +176,13 @@ button.back-to-learning{
     margin: auto;
     cursor: pointer;
     position: relative;
-    left: 550px;
+    left: 42%;
     bottom: 40px;
-    width: 150px;
+    width: 12%;
+}
+
+button.back-to-learning:hover{
+    color: #E3DCD2;
 }
 
 h3.pattern-header{
@@ -194,7 +197,7 @@ h3.pattern-header{
 }
 
 .TA-patterns img{
-    width:400px;
+    width:100%;
 }
 
 .TA-patterns figure{
@@ -202,33 +205,30 @@ h3.pattern-header{
     text-align: center;
     text-emphasis: 700;
     font-size: large;
-    background :rgb(104,88,69);
+    background :#E3DCD2;
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
 }
 
 h1.basics-header{
-    background: rgb(144,122,95);
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 80%;
+    color: white;
+    padding: 1%;
 }
 
 footer.supplyanddemand-intro-sentences{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
-    padding: 20px;
+    padding: 2%;
     text-align: center;
     border-radius: 10px;
     font-size:medium;
     font-weight:bold;
-    opacity: 80%;
     width: 50%;
     margin: 0px 22%;
 }
 
 h1.supply{
-    background: rgb(144,122,95);
+    background:#E3DCD2;
     color:rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
@@ -237,12 +237,12 @@ h1.supply{
     font-weight:bold;
     width: 20%;
     position: relative;
-    left: 295px;
-    width: 700px;
+    left: 22%;
+    width: 52.5%;
 }
 
 h1.demand{
-    background: rgb(144,122,95);
+    background: #E3DCD2;
     color:rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
@@ -251,20 +251,56 @@ h1.demand{
     font-weight:bold;
     width: 20%;
     position: relative;
-    left: 295px;
-    width: 700px;
+    left: 22%;
+    width: 52.5%;
 }
 
 p.supply-description{
     font-size:medium;
-    width: 700px;
+    width: 100%;
     text-align: center;
 }
 
 .supplyanddemand-example img{
-    width:800px;
+    width:60%;
     position: relative;
-    left:215px;
+    left: 18.7%;
+}
+
+footer.bonds-intro-sentences{
+    background: #E3DCD2;
+    color:rgb(0, 0, 0);
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: large;
+    font-weight:bold;
+    width: 50%;
+    margin: 0px 22%;
+}
+
+ul.bondsdescription{
+    padding: 0;
+    background:#E3DCD2;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    right: 1%;
+}
+
+h1.bondstextheader{
+    background: #E3DCD2;
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size:x-large;
+    font-weight:bold;
+    width: 20%;
+    position: relative;
+    left: 22%;
+    width: 52.5%;
 }
 
 ::-webkit-scrollbar {
