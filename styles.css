@@ -189,6 +189,7 @@ h3.pattern-header{
     text-align: center;
     font-weight: 700;
     font-size: x-large;
+    color: #E3DCD2;
 }
 
 .TA-patterns{
@@ -198,6 +199,7 @@ h3.pattern-header{
 
 .TA-patterns img{
     width:100%;
+    border-radius:10px;
 }
 
 .TA-patterns figure{
@@ -211,7 +213,7 @@ h3.pattern-header{
 }
 
 h1.basics-header{
-    color: white;
+    color: #E3DCD2;
     padding: 1%;
 }
 
