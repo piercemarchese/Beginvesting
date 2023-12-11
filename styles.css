@@ -320,3 +320,5 @@ h1.bondstextheader{
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  .bolded{font-weight: bold}
