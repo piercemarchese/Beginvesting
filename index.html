@@ -5,26 +5,36 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <figure class="logo">
-            <img src="Beginvestinglogo.png" alt="Beginvesting Logo"
-            width="50"
-            height="80">
-            <figcaption></figcaption>
         </figure>
-        <header class="navigate-header">
+        <header>
+            <figure class="logo">
+                <img src="m:\Pierce\Pictures\newbeginvestinglogo.png" alt="Beginvesting Logo"
+                width="50"
+                height="80">
+            </figure>
             <nav>
                 <ul class="pages-list">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="learning.html">LEARNING</a></li>
+                    <li><a href="learning.html">EXPLORE</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <h1>HOME</h1>
         </header>
-        <section class="intro-sentences-on-index-page">Welcome to Beginvesting, a beginner friendly investing website that uses credible resources. Hopefully this helps everyone get a start on financial literacy and enjoy learning about the stock market and other finance-related topics.</section>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+        </script>
+
+        <div class="typewriter-background">
+            <h1 class="typewriter">beginvesting.</h1>
+        </div>
+        <section class="index-intro-sentences">where beginners transform.</section>
         <br /> <br /> <br /> <br /> <br /> <br />
         <form action="learning.html">
-            <button type="submit" class="go-to-learning-page-button"> Start Learning Here</button>
+            <button type="submit" class="go-to-learning-page-button"> EXPLORE</button>
         </form>
         <br /> <br /> <br /> <br />
         <footer class="about-the-developer">About the devloper: I am a highschool student who made this website as a way to help those who want to get started with investing but don't yet know where to begin. Everything on here is extracted from my own hand written notes. I am excited to share this knowledge with you as a user of this website because everyone needs a starting point, and I would love for this website to be the beginning of your journey.</footer>

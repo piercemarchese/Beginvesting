@@ -1,84 +1,113 @@
 body{ 
     background: #013328;
     color: rgb(0, 0, 0);
-    font-family: Helvetica Neue, helvetica, Arial, sans-serif;
+    font-family: 'fredoka', sans-serif;
     margin: 0;
-    padding: 10px;
+    height: 100vh;
 }
 
-header.navigate-header{ 
-    background: #013328;
-    margin: 1%;
-    color:white;
+header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
 }
 
-header.stock-outlook-header{
+header.logo{
     position: relative;
-    bottom: 541px;
-    max-width: 16%;
-    background: #E3DCD2;
-    padding: 2%;
-    border-radius: 10px;
-    font-size:medium;
-    font-weight:bold;
-    text-align: center;
-    margin: 0.7%;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 2vh;
+    background-size: cover;
+}
+
+header ul li  a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
 }
 
 footer.about-the-developer{
-    background: #E3DCD2;
-    color:rgb(0, 0, 0);
-    padding: 30px;
+    height: 30vh;
+    background: transparent;
+    color:#E3DCD2;
+    padding: 1.7%;
     display: flex;
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
-    font-size:small;
+    font-size:medium;
     font-weight:bold;
     width: 50%;
     margin: 0px 22%;
 }
 
-section.intro-sentences-on-index-page{
-    background: #E3DCD2;
-    color:rgb(0, 0, 0);
-    padding:  30px;
+section.index-intro-sentences{
+    background: transparent;
+    color:#E3DCD2;
     display: flex;
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
     font-size:large;
     font-weight:bold;
-    width: 50%;
-    margin: 0px 22%;
+    margin: -15% 39.3%;
+    height: 80vh;
 }
 
 button.go-to-learning-page-button{
-    background: #CC8B65;
-    color:rgb(0, 0, 0);
-    padding: 20px;
+    background: transparent;
+    color:white;
+    padding: 1.2%;
     display: block;
     flex-direction: row;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size:large;
     font-weight:bold;
     margin: 0 auto;
     cursor: pointer;
+    border-color: white;
 }
 
 button.go-to-learning-page-button:hover{
-    color: #E3DCD2;
+    background: #CC8B65;
 }
 
 ul.pages-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background: #E3DCD2;
-    border-radius: 10px;
-    font-weight:700;
+    background: transparent;
+    font-weight:4em;
     color:black;
     font-weight: bold;
+    left: 70%;
 }
 
 li {
@@ -104,8 +133,8 @@ a:hover{
 
 .logo {
     position: relative;
-    top: 10px;
-    left: -1%;
+    top: -20px;
+    left: -35%;
 }
 
 h6.disclaimer{
@@ -118,40 +147,42 @@ h6.disclaimer{
     border-radius: 10px;
     font-size:small;
     font-weight:bold;
-    max-width: 75%;
+    max-width: 53%;
     position: relative;
-    left: 13%;
+    left: 20%;
 }
 
 footer.learning-intro-sentences{
-    background: #E3DCD2;
-    color:rgb(0, 0, 0);
+    background-color: transparent;
+    color:#E3DCD2;
     padding: 3%;
     display: flex;
     flex-direction: row;
     text-align: center;
-    border-radius: 10px;
-    font-size:large;
+    font-size:35px;
     font-weight:bold;
     width: 50%;
     margin: 0px 22%;
+    height: 3px;
 }
 
 button.learning-button{
-    background: #CC8B65;
-    color:rgb(0, 0, 0);
+    background: transparent;
+    color:white;
     padding: 2%;
     display: block;
     flex-direction: row;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size:x-large;
     font-weight:bold;
     margin: auto;
     cursor: pointer;
+    border-color: white;
 }
 
 button.learning-button:hover{
-    color:#E3DCD2;
+    background: #CC8B65;
+
 }
 
 ul.basics-list{
@@ -162,6 +193,9 @@ ul.basics-list{
     border-radius: 10px;
     font-size: large;
     font-weight: bold;
+    width: 80%;
+    position: relative;
+    left: 10%
 }
 
 button.back-to-learning{
@@ -220,13 +254,20 @@ h1.basics-header{
 footer.supplyanddemand-intro-sentences{
     background: #E3DCD2;
     color:rgb(0, 0, 0);
-    padding: 2%;
     text-align: center;
     border-radius: 10px;
-    font-size:medium;
+    font-size: large;
+    padding: 2%;
     font-weight:bold;
     width: 50%;
     margin: 0px 22%;
+}
+
+.supplyanddemand-example img{
+    width: 56%;
+    position: relative;
+    left: 20.7%;
+    border-radius: 10px;
 }
 
 h1.supply{
@@ -258,15 +299,10 @@ h1.demand{
 }
 
 p.supply-description{
-    font-size:medium;
+    font-size:large;
     width: 100%;
     text-align: center;
-}
-
-.supplyanddemand-example img{
-    width:60%;
-    position: relative;
-    left: 18.7%;
+    line-height: 3.5;
 }
 
 footer.bonds-intro-sentences{
@@ -310,11 +346,13 @@ h1.bondstextheader{
   }
   
   ::-webkit-scrollbar-track {
-    background: rgb(105, 98, 91);
+    background: #01221b;
+    border-radius: 6px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
+    background: #E3DCD2;
+    border-radius: 6px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -322,3 +360,51 @@ h1.bondstextheader{
   }
 
   .bolded{font-weight: bold}
+
+
+
+.typewriter-background{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "fredoka", sans-serif;
+    font-size: 4em;
+    color: #E3DCD2;
+}
+
+.typewriter{
+    position: relative;
+}
+
+.typewriter::after{
+        content: '|';
+        position: absolute;
+        right: 0;
+        color: #E3DCD2;
+        background-color: #013328;
+        width: 100%;
+        animation: typing 2.5s,
+                    line 1s infinite;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
