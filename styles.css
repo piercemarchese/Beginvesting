@@ -43,6 +43,7 @@ header ul li{
     background-size: cover;
 }
 
+
 header ul li  a{
     position: relative;
     margin: 0 15px;
@@ -51,6 +52,18 @@ header ul li  a{
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+    color:#E3DCD2;
+    font-size: 4em;
+    animation: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+
 }
 
 footer.about-the-developer{
@@ -62,40 +75,78 @@ footer.about-the-developer{
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
-    font-size:medium;
+    font-size: larger;
     font-weight:bold;
     width: 50%;
     margin: 0px 22%;
+    animation: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
 }
 
-section.index-intro-sentences{
-    background: transparent;
-    color:#E3DCD2;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+div.index-intro-sentences{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fredoka', sans-serif;
+    font-size: 1em;
+    color: #E3DCD2;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    border-radius: 10px;
-    font-size:large;
-    font-weight:bold;
-    margin: -15% 39.3%;
-    height: 80vh;
+    margin-top:-15%;
+    margin-left: 39.3%;
+    font-weight: bold;
 }
 
-button.go-to-learning-page-button{
+
+section.index-intro-typewriter{
+    position: relative;
+}
+
+section.index-intro-typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #E3DCD2;
+    background-color: #013328;
+    width: 100%;
+    animation: typing 2.5s,
+                line 1s infinite;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+button.explore-page-button{
     background: transparent;
     color:white;
-    padding: 1.2%;
+    padding: 23px;
     display: block;
     flex-direction: row;
     border-radius: 20px;
     font-size:large;
     font-weight:bold;
-    margin: 0 auto;
     cursor: pointer;
     border-color: white;
+    margin-left: 46.5%;
+    animation: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+    border-style: solid;
 }
 
-button.go-to-learning-page-button:hover{
+button.explore-page-button:hover{
     background: #CC8B65;
 }
 
@@ -123,7 +174,7 @@ li:first-child{
 
 a {
     text-decoration: none;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
 }
 
 a:hover{
@@ -149,7 +200,7 @@ h6.disclaimer{
     font-weight:bold;
     max-width: 53%;
     position: relative;
-    left: 20%;
+    left: 22.5%;
 }
 
 footer.learning-intro-sentences{
@@ -178,6 +229,7 @@ button.learning-button{
     margin: auto;
     cursor: pointer;
     border-color: white;
+    border-style: solid;
 }
 
 button.learning-button:hover{
@@ -189,8 +241,8 @@ ul.basics-list{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background:#E3DCD2;
-    border-radius: 10px;
+    background:transparent;
+    color: #E3DCD2;
     font-size: large;
     font-weight: bold;
     width: 80%;
@@ -199,8 +251,8 @@ ul.basics-list{
 }
 
 button.back-to-learning{
-    background: #CC8B65;
-    color:rgb(0, 0, 0);
+    background: transparent;
+    color:white;
     padding: 10px;
     display: block;
     flex-direction: row;
@@ -210,13 +262,15 @@ button.back-to-learning{
     margin: auto;
     cursor: pointer;
     position: relative;
-    left: 42%;
+    left: 33%;
     bottom: 40px;
     width: 12%;
+    border-color: white;
+    border-style: solid;
 }
 
 button.back-to-learning:hover{
-    color: #E3DCD2;
+    background-color: #CC8B65;
 }
 
 h3.pattern-header{
@@ -246,9 +300,12 @@ h3.pattern-header{
     width: 500px;
 }
 
-h1.basics-header{
+.basics-title{
     color: #E3DCD2;
-    padding: 1%;
+    position: relative;
+    font-size: 3em;
+    padding-left: 190px;
+    font-weight: bold;
 }
 
 footer.supplyanddemand-intro-sentences{
@@ -367,7 +424,7 @@ h1.bondstextheader{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 73vh;
+    height: 72vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,5 +463,120 @@ h1{
 @keyframes line{
     50%{
         color: transparent;
+    }
+}
+
+.typewriter-explore-background{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.typewriter-explore{
+    position: relative;
+}
+
+.typewriter-explore::after{
+        content: '|';
+        position: absolute;
+        right: 0;
+        color: #E3DCD2;
+        background-color: #013328;
+        width: 100%;
+        animation: typing 2.5s,
+                    line 1s infinite;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+}
+
+.explore-intro-sentences{
+    background: transparent;
+    color:#E3DCD2;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    font-size:large;
+    font-weight:bold;
+    margin: -15% 16.8%;
+    height: 80vh;
+}
+
+
+.scrolldown{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%)
+        rotate(45deg);
+}
+
+
+.scrolldown span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate (-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown2{
+    position: absolute;
+    bottom: -850px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-90px) translateX(-50%)
+        rotate(45deg);
+}
+
+.scrolldown2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown2 span:nth-child(1){
+    transform: translate (-15px, -15px);
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    50%,100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
     }
 }
