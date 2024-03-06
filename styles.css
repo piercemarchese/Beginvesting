@@ -21,7 +21,6 @@ header{
 
 header.logo{
     position: relative;
-    transition: 0.6s;
 }
 
 header ul{
@@ -63,7 +62,6 @@ h2{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timeline: view();
-
 }
 
 footer.about-the-developer{
@@ -118,11 +116,10 @@ section.index-intro-typewriter::after{
     color: #E3DCD2;
     background-color: #013328;
     width: 100%;
-    animation: typing 2.5s,
+    animation: typing 2s,
                 line 1s infinite;
     animation-delay: 0.9s;
     animation-fill-mode: forwards;
-
 }
 
 
@@ -137,17 +134,34 @@ button.explore-page-button{
     font-size:large;
     font-weight:bold;
     cursor: pointer;
-    border-color: white;
+    border-color: #E3DCD2;
     margin-left: 46.5%;
+    border-style: solid;
     animation: fadeInAnimation;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timeline: view();
-    border-style: solid;
+    transition: 0.5s;
 }
 
 button.explore-page-button:hover{
-    background: #CC8B65;
+    background: #E3DCD2;
+    transition: ease-in-out 0.5s;
+    color:#013328;
+    opacity: 90%;
+}
+
+
+.navigation{
+    margin: 0;
+    padding: 0;
+    background: #013328;
+    position: relative;
+    top: -40px;
+    width:100%;
+    right: 100px;
+    height: 150px;
+
 }
 
 ul.pages-list {
@@ -155,10 +169,24 @@ ul.pages-list {
     padding: 0;
     list-style-type: none;
     background: transparent;
-    font-weight:4em;
-    color:black;
+    font-weight: 4em;
+    color: black;
     font-weight: bold;
-    left: 70%;
+    position: relative;
+    height: 6em;
+    top: 50px;
+    left: 200px;
+}
+
+.logo {
+    position: relative;
+    top: -10px;
+    right: 30em;
+    background-color: inherit;
+    appearance: none;
+    cursor: pointer;
+    border:#013328 solid;
+    width: 100%;
 }
 
 li {
@@ -180,12 +208,6 @@ a {
 a:hover{
     text-decoration: underline;
     color: #CC8B65;
-}
-
-.logo {
-    position: relative;
-    top: -20px;
-    left: -35%;
 }
 
 h6.disclaimer{
@@ -217,11 +239,11 @@ footer.learning-intro-sentences{
     height: 3px;
 }
 
-button.learning-button{
+button.investing-button{
     background: transparent;
     color:white;
-    padding: 2%;
-    display: block;
+    padding: 70px;
+    display: inline-flex;
     flex-direction: row;
     border-radius: 20px;
     font-size:x-large;
@@ -230,10 +252,60 @@ button.learning-button{
     cursor: pointer;
     border-color: white;
     border-style: solid;
+    transition: 0.5s ease-in;
+    box-sizing: border-box;
+    max-width: 350px;
+    max-height: 200px;
+    align-items: center;
+    animation: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+}
+
+button.investing-button:hover{
+    background: #E3DCD2;
+    transition: ease-in-out 0.5s;
+    color:#013328;
+    opacity: 90%;
+
+}
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+button.learning-button{
+    background: transparent;
+    color:white;
+    padding: 70px;
+    flex-direction: row;
+    border-radius: 20px;
+    font-size:x-large;
+    font-weight:bold;
+    cursor: pointer;
+    border-color: #E3DCD2;
+    border-style: solid;
+    transition: 0.5s ease-in;
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    animation: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
 }
 
 button.learning-button:hover{
-    background: #CC8B65;
+    background: #E3DCD2;
+    transition: ease-in-out 0.5s;
+    color:#013328;
+    opacity: 90%;
 
 }
 
@@ -247,7 +319,8 @@ ul.basics-list{
     font-weight: bold;
     width: 80%;
     position: relative;
-    left: 10%
+    left: 10%;
+
 }
 
 button.back-to-learning{
@@ -263,7 +336,7 @@ button.back-to-learning{
     cursor: pointer;
     position: relative;
     left: 33%;
-    bottom: 40px;
+    bottom: 50px;
     width: 12%;
     border-color: white;
     border-style: solid;
@@ -470,7 +543,7 @@ h1{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 73vh;
+    height: 72vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,7 +575,7 @@ h1{
     border-radius: 10px;
     font-size:large;
     font-weight:bold;
-    margin: -15% 16.8%;
+    margin: -15% 19.5%;
     height: 80vh;
 }
 
